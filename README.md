@@ -25,17 +25,3 @@ Inside the `project.code-workspace`, add required modules to the task `pip insta
 ## Unit Tests
 To run unit tests of your cloned repo
 - ensure `__init__.py` exist in every level of your repo
-
-
-- edit your workspace json file to point to your repo:
-```json
-{
-    "settings": {
-        "python.testing.unittestEnabled": false,
-        "python.testing.pytestEnabled": true,
-        "python.testing.cwd": "/opt/python-dev/repos/<myrepo>",
-        "python.testing.autoTestDiscoverOnSaveEnabled": true,
-        "python.testing.pytestArgs": ["."]
-    }
-} 
-```
