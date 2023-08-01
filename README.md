@@ -1,4 +1,4 @@
-# Python-Dev
+# Python Development
 
 This repository provides a Python development environment inside a container.
 
@@ -6,7 +6,8 @@ This repository provides a Python development environment inside a container.
 1. Add this repo as a git submodule inside your development repo
 ```bash
 cd <your repo>
-git submodule add git@ssh.git.tech.rz.db.de:LeifHendrikLange/python-dev.git .devcontainer
+git submodule add git@github.com:lehela/.devcontainer.git .devcontainer
+git submodule update --init --recursive
 ```
 
 2. Open VSCode, and choose "Rebuild and Reopen in Container"
