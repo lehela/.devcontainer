@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  python-dev:
+    image: python-dev:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-dev
+    env_file:
+      - .env
+    volumes:
+      - ..:/opt/project
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh:/root/.ssh
+      - ~/.aws:/root/.aws
+      - ~/.gitconfig:/root/.gitconfig
+    entrypoint: ["sleep", "infinity"]
