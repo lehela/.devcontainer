@@ -30,9 +30,9 @@
         "tasks": [
             {
                 "label": "pip install",
-                "args": ["install",
+                "args": ["install", "--upgrade",
                     // add pytest package 
-                    "pytest",
+                    "pip",
                     // add more custom pypi packages to install below
                 ],
                 "command": "pip",
